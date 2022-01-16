@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+  </head>
+
+  <link rel="stylesheet" href="./style/style.css">
+  
+  <body>
+
+    <div id="header"></div>
+
+    <div id="input">
+      <input type="text" id="food_name" placeholder="Enter the Food Name">
+    </div>
+
+
+    <div id="contain"></div>
+
+    <div id="search_result"></div>
+
+   
+    
+  </body>
+
+</html>
+
+
+</script> 
+
+<script type="module">
+
+import navbar from "./component/navbar.js"; //we can change the name of the navbar
+  // console.log('navbar:', navbar)
+
+  let navbar_div = document.getElementById("header");
+    navbar_div.innerHTML = navbar();
+
+ 
+  import {debounce} from './script/debounce.js'
+  // console.log('debounce:', debounce)
+
+  var query = document.getElementById("food_name");
+
+  query.oninput = ()=>{
+    
+    let whatappend = document.getElementById("search_result")
+
+    let div = document.getElementById("contain")
+    
+
+    debounce(query.value, whatappend, div)
+    
+    
+
+  };
+
+  
+
+</script>
