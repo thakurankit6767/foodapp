@@ -9,6 +9,8 @@ CSS
 JAVASCRIPT
 LocalStorage
 
+![Screenshot (1213)](https://user-images.githubusercontent.com/95959359/159858226-64cdb653-738c-4c09-8f5e-8b4e1994b43b.png)
+
 ## Libraries used
 Font awesome
 Google fonts
